@@ -1,0 +1,175 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #92a1be;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #37a83b;
+    
+    color: white;
+    padding: 1rem 0;
+}
+
+header .logo {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #371261;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    padding: 1rem;
+}
+
+.about-intro {
+    background-color: #e4fc8d;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-intro h2 {
+    font-size: 2.5rem;
+    color:  #007e04;
+    margin-bottom: 1rem;
+}
+
+.about-intro p {
+    font-size: 1.25rem;
+    color: #272626;
+}
+
+.about-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgb(200, 238, 65);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-details h2 {
+    font-size: 2rem;
+    color: #2b2a2a;
+    margin-bottom: 1rem;
+}
+
+.about-details p,
+.about-details ul {
+    font-size: 1.1rem;
+    color: #524f4f;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.about-details ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.about-details ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .about-intro h2 {
+        font-size: 2rem;
+    }
+
+    .about-intro p {
+        font-size: 1rem;
+    }
+
+    .about-details {
+        padding: 1rem;
+    }
+
+    .about-details h2 {
+        font-size: 1.75rem;
+    }
+
+    .about-details p,
+    .about-details ul {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-intro {
+        padding: 1.5rem 1rem;
+    }
+
+    .about-intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-intro p {
+        font-size: 0.9rem;
+    }
+
+    .about-details {
+        padding: 0.5rem;
+    }
+
+    .about-details h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-details p,
+    .about-details ul {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,225 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #c2ccec;
+    color: #3b3928;
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgb(255, 245, 245);
+}
+
+header .logo {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: rgba(59, 59, 20, 0.959);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f10d2b;
+}
+
+/* Main Content Styling */
+main {
+    padding-top: 5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.banner {
+    background: url('a1.jpg') no-repeat center center/cover;
+    color: rgb(37, 57, 77);
+    padding: 5rem 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+.banner p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    animation: slideInFromRight 1s ease-in-out;
+}
+
+@keyframes slideInFromRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+.banner .cta-button {
+    background-color: #4CAF50;
+    color: rgb(29, 28, 28);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.banner .cta-button:hover {
+    background-color: #da4c21;
+}
+
+.features {
+    background-color: #95dfe9;
+    padding: 2rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 236, 236, 0.87);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature {
+    margin-bottom: 2rem;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature p {
+    font-size: 1rem;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #686868;
+    color: rgb(245, 236, 236);
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .banner h2 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    .features {
+        padding: 1rem;
+    }
+
+    .features h2 {
+        font-size: 1.75rem;
+    }
+
+    .feature h3 {
+        font-size: 1.25rem;
+    }
+
+    .feature p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        padding: 3rem 1rem;
+    }
+
+    .banner h2 {
+        font-size: 1.5rem;
+    }
+
+    .banner p {
+        font-size: 0.9rem;
+    }
+
+    .banner .cta-button {
+        padding: 0.5rem 1rem;
+    }
+
+    .features {
+        padding: 1rem;
+    }
+
+    .features h2 {
+        font-size: 1.5rem;
+    }
+
+    .feature h3 {
+        font-size: 1.1rem;
+    }
+
+    .feature p {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Agricultural Waste Management System</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Agricultural Waste Management System</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="methodology.html">Methodology</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="buy.html">Buy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-intro">
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you! Please fill out the form below to get in touch with us.</p>
+        </section>
+        <section class="contact-form-section">
+            <form method="post" name="ContactPage11" id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+     
+
+            <script type="text/javascript">
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbxFDFabJ4eauOom8gafqzxuyYm2fWydTA1452L74KWXuTZHyv9eL2cwK1mDAJiLRzbC2Q/exec'
+                        const form = document.forms['ContactPage11']
+                      
+                        form.addEventListener('submit', e => {
+                          e.preventDefault()
+                          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                            .catch(error => console.error('Error!', error.message))
+                        })
+            </script>
+
+
+
+            <div id="contact-info">
+                <h3>Our Contact Information</h3>
+                <p>Phone: +91-7908593470</p>
+                <p>Email: <a href="mailto:soubhikmondal8880@gmail.com">soubhikmondal8880@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Agricultural Waste Management System. All rights reserved.</p>
+    </footer>
+    <script src="contact.js"></script>
+</body>
+</html>

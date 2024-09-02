@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Agricultural Waste Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0f7fa 0%, #b2dfdb 100%);
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #009688; /* Previous green color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 20px 0 0;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #004d40;
+            color: #ffeb3b;
+        }
+        .about-intro, .about-details {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .about-intro {
+            background: linear-gradient(135deg, #c5e1a5 0%, #a5d6a7 100%);
+        }
+        .about-details {
+            background: linear-gradient(135deg, #ffe0b2 0%, #ffcc80 100%);
+        }
+        .about-intro h2, .about-details h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .about-intro p, .about-details p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .about-details ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        .about-details ul li {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        .about-details h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: #4caf50;
+            margin-top: 10px;
+            animation: slideIn 1s ease-out;
+        }
+        @keyframes slideIn {
+            from {
+                width: 0;
+            }
+            to {
+                width: 50px;
+            }
+        }
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            z-index: 1000;
+            display: none;
+            max-width: 400px;
+            text-align: center;
+            animation: fadeIn 0.5s ease-out;
+        }
+        .popup h3 {
+            margin-top: 0;
+        }
+        .popup button {
+            background-color: #009688;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .popup button:hover {
+            background-color: #00796b;
+        }
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            display: none;
+        }
+        footer {
+            background-color: #009688; /* Previous green color */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="animate__animated animate__fadeInDown">
+        <div class="logo">
+            <h1>Agricultural Waste Management System</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="methodology.html">Methodology</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="buy.html">Buy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-intro animate__animated animate__fadeInUp">
+            <h2>About Our Project</h2>
+            <p>The Agricultural Waste Management System project aims to revolutionize the way agricultural waste is managed, promoting sustainability and environmental stewardship. By leveraging advanced technologies and best practices, we strive to address the pressing challenges associated with agricultural waste.</p>
+        </section>
+
+        <section class="about-details animate__animated animate__fadeInUp">
+            <h2>Project Overview</h2>
+            <p>Our project addresses the critical issue of agricultural waste management. The agricultural sector generates significant amounts of waste, which if not managed properly, can lead to severe environmental impacts. Our system aims to provide an efficient, sustainable, and scalable solution to manage and recycle agricultural waste effectively.</p>
+            
+            <h2>Objectives</h2>
+            <ul>
+                <li>To develop a comprehensive system for managing agricultural waste efficiently.</li>
+                <li>To promote the recycling and reuse of agricultural waste materials.</li>
+                <li>To ensure compliance with environmental regulations and standards.</li>
+                <li>To engage stakeholders in the agricultural sector to adopt sustainable practices.</li>
+            </ul>
+            
+            <h2>Problem Statement</h2>
+            <p>The current agricultural waste management practices are often inefficient, leading to increased environmental pollution and resource wastage. There is a need for a robust system that can handle the complexities of agricultural waste management, from collection and segregation to recycling and compliance.</p>
+        </section>
+    </main>
+
+    <div class="popup-overlay"></div>
+    <div class="popup">
+        <h3>Welcome to Our Project</h3>
+        <p>Learn how we're changing the future of agricultural waste management!</p>
+        <button id="close-popup">Close</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Agricultural Waste Management System. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Show popup after 3 seconds
+        window.onload = function() {
+            setTimeout(function() {
+                document.querySelector('.popup-overlay').style.display = 'block';
+                document.querySelector('.popup').style.display = 'block';
+            }, 3000);
+        };
+
+        // Close popup
+        document.getElementById('close-popup').onclick = function() {
+            document.querySelector('.popup-overlay').style.display = 'none';
+            document.querySelector('.popup').style.display = 'none';
+        };
+    </script>
+
+</body>
+</html>

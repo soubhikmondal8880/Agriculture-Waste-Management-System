@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Donation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease;
+            max-width: 400px;
+            width: 100%;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+            animation: slideInDown 0.5s ease;
+        }
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        form {
+            text-align: center;
+            animation: fadeInUp 0.5s ease;
+        }
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #666;
+            transition: color 0.3s ease;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        button {
+            width: calc(100% - 22px); /* Adjust width to accommodate borders */
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Make a Donation</h1>
+        <form action="dd.html" name="Donate" method="post">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required><br><br>
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="card">Card Details</label>
+            <input type="text" id="card" name="card" placeholder="Enter card details" required><br><br>
+    
+            <label for="amount">Donation Amount</label>
+            <input type="number" id="amount" name="amount" placeholder="Enter amount" required><br><br>
+    
+            <button type="submit">Donate Now</button>
+        </form>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxsZs6A0xx5tjhS7ZnXvqh21Nbb_fMUHXaXbQB9Sbz_hEJMSw9Ctxif2cs8VB61RcBpsQ/exec';
+            const form = document.forms['Donate'];
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault();
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => response.json())
+                .then(data => {
+                    alert("Thanks for Contacting us..! We Will Contact You Soon...");
+                    setTimeout(() => {
+                        window.location.href = 'dd.html';
+                    }, 1); // Adjust time as needed
+                })
+                .catch(error => console.error('Error!', error.message));
+            });
+        </script>
+    </div>
+</body>
+</html>

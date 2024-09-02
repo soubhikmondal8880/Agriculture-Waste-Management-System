@@ -1,0 +1,367 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+}
+
+header .logo {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Individual button colors and animations */
+nav ul li a.home {
+    background-color: #FF5733;
+}
+
+nav ul li a.about {
+    background-color: #33C1FF;
+}
+
+nav ul li a.features {
+    background-color: #FF33A6;
+}
+
+nav ul li a.methodology {
+    background-color: #33FF57;
+}
+
+nav ul li a.contact {
+    background-color: #FFC300;
+}
+
+nav ul li a.buy {
+    background-color: #8E44AD;
+}
+
+nav ul li a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a.home:hover {
+    animation: pulseHome 1.5s infinite;
+}
+
+nav ul li a.about:hover {
+    animation: pulseAbout 1.5s infinite;
+}
+
+nav ul li a.features:hover {
+    animation: pulseFeatures 1.5s infinite;
+}
+
+nav ul li a.methodology:hover {
+    animation: pulseMethodology 1.5s infinite;
+}
+
+nav ul li a.contact:hover {
+    animation: pulseContact 1.5s infinite;
+}
+
+nav ul li a.buy:hover {
+    animation: pulseBuy 1.5s infinite;
+}
+
+/* Button animations */
+@keyframes pulseHome {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulseAbout {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulseFeatures {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulseMethodology {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulseContact {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulseBuy {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Main Content Styling */
+main {
+    padding: 1rem;
+}
+
+.contact-intro {
+    background-color: #FFEB3B;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: fadeIn 2s;
+}
+
+.contact-intro h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.contact-intro p {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+.contact-form-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1.5s;
+}
+
+.contact-form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-section label {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #4CAF50;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form-section button {
+    padding: 0.75rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-section button:hover {
+    background-color: #45a049;
+}
+
+#contact-info {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#contact-info p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+#contact-info a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+#contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .contact-intro h2 {
+        font-size: 2rem;
+    }
+
+    .contact-intro p {
+        font-size: 1rem;
+    }
+
+    .contact-form-section {
+        padding: 1rem;
+    }
+
+    .contact-form-section form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-intro {
+        padding: 1.5rem 1rem;
+    }
+
+    .contact-intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-intro p {
+        font-size: 0.9rem;
+    }
+
+    .contact-form-section {
+        padding: 0.5rem;
+    }
+
+    .contact-form-section form {
+        width: 100%;
+    }
+
+    .contact-form-section label {
+        font-size: 1rem;
+    }
+
+    .contact-form-section button {
+        font-size: 1rem;
+    }
+
+    #contact-info h3 {
+        font-size: 1.25rem;
+    }
+
+    #contact-info p {
+        font-size: 1rem;
+    }
+}

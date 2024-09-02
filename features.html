@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - Agricultural Waste Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="fs.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b9d6b6; /* Using the new background color */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50; /* Previous green color */
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            margin-bottom: 0; /* Ensure it fits well with header */
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 15px 25px;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6); /* Default color with transparency */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+            margin: 0 5px; /* Margin between buttons */
+        }
+
+        nav ul li a:hover {
+            transform: scale(1.05); /* Slight lift effect */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+        }
+
+        .nav-button-home {
+            background: rgba(255, 87, 34, 0.8); /* Orange with transparency */
+        }
+
+        .nav-button-about {
+            background: rgba(33, 150, 243, 0.8); /* Blue with transparency */
+        }
+
+        .nav-button-features {
+            background: rgba(76, 175, 80, 0.8); /* Green with transparency */
+        }
+
+        .nav-button-methodology {
+            background: rgba(156, 39, 176, 0.8); /* Purple with transparency */
+        }
+
+        .nav-button-contact {
+            background: rgba(255, 193, 7, 0.8); /* Yellow with transparency */
+        }
+
+        .nav-button-buy {
+            background: rgba(233, 30, 99, 0.8); /* Pink with transparency */
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .features-intro {
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .features-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .feature-button {
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 15px 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            animation: fadeInUp 1s ease-out;
+            animation-fill-mode: both;
+        }
+
+        .feature-button i {
+            font-size: 1.5rem;
+        }
+
+        .feature-button:hover {
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        .btn-waste-collection {
+            background-color: #FF5722; /* Orange */
+        }
+
+        .btn-waste-segregation {
+            background-color: #009688; /* Teal */
+        }
+
+        .btn-recycling-management {
+            background-color: #3F51B5; /* Indigo */
+        }
+
+        .btn-reporting-analytics {
+            background-color: #FFC107; /* Amber */
+        }
+
+        .btn-compliance-regulations {
+            background-color: #8BC34A; /* Light Green */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Agricultural Waste Management System</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-button nav-button-home">Home</a></li>
+                <li><a href="about.html" class="nav-button nav-button-about">About</a></li>
+                <li><a href="features.html" class="nav-button nav-button-features">Features</a></li>
+                <li><a href="methodology.html" class="nav-button nav-button-methodology">Methodology</a></li>
+                <li><a href="contact.html" class="nav-button nav-button-contact">Contact</a></li>
+                <li><a href="buy.html" class="nav-button nav-button-buy">Buy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="features-intro">
+            <h2>Our Key Features</h2>
+            <p>Discover the core functionalities of our Agricultural Waste Management System designed to promote efficiency and sustainability.</p>
+        </section>
+        <section class="features-list">
+            <a href="waste-collection.html" class="feature-button btn-waste-collection">
+                <i class="fas fa-truck"></i> Waste Collection
+            </a>
+            <a href="waste-segregation.html" class="feature-button btn-waste-segregation">
+                <i class="fas fa-recycle"></i> Waste Segregation
+            </a>
+            <a href="recycling-management.html" class="feature-button btn-recycling-management">
+                <i class="fas fa-industry"></i> Recycling Management
+            </a>
+            <a href="reporting-analytics.html" class="feature-button btn-reporting-analytics">
+                <i class="fas fa-chart-line"></i> Reporting and Analytics
+            </a>
+            <a href="compliance-regulations.html" class="feature-button btn-compliance-regulations">
+                <i class="fas fa-balance-scale"></i> Compliance and Regulations
+            </a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Agricultural Waste Management System. All rights reserved.</p>
+    </footer>
+    <script src="fs.js"></script>
+</body>
+</html>
